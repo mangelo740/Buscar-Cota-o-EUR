@@ -1,6 +1,5 @@
 from tkinter import N
 import requests
-import json
 import time
 import pygame
 
@@ -19,7 +18,6 @@ print('-' * 35)
 segundos = int(input('Em quantos segundos atualizar? '))
 meta = float(input("Cotação desejada da moeda? "))
 print('-' * 35)
-
 valor = float(cotacao['EUR']['bid'])
 
 
@@ -34,6 +32,7 @@ while valor >= meta:
     print('Valor atual: R$' + cotacao['EUR']['bid'])
     time.sleep(segundos)
 
+
 # ALARME DE A META FOR ATINGIDA
 pygame.mixer.init()
 pygame.mixer.music.load('.\sample.mp3')
@@ -46,7 +45,6 @@ print('-' * 35)
 
 # SAÍR DO PROGRAMA
 sair = int(input("Digite 1 para sair: "))
-
 
 if sair == 1:
     print('Obrigado por utilizar o programa de aviso')

@@ -1,4 +1,3 @@
-from tkinter import N
 import requests
 import time
 import pygame
@@ -23,6 +22,8 @@ valor = float(cotacao['EUR']['bid'])
 
 # REPETIÇÃO ATÉ CHEGAR NA META
 while valor >= meta:
+    requisicao = requests.get('https://economia.awesomeapi.com.br/all/EUR-BRL')
+    cotacao = requisicao.json()
     print('-' * 35)
     print('#### Cotação do Euro ####')
     print('-' * 35)

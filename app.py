@@ -6,6 +6,7 @@ import pygame
 
 
 # CONEXÃO COM API DE MERCADO
+#requisicao = requests.get("https://www.googleapi.com/finance/quote/EUR-BRL")
 requisicao = requests.get('https://economia.awesomeapi.com.br/all/EUR-BRL')
 cotacao = requisicao.json()
 

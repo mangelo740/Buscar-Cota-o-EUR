@@ -65,8 +65,8 @@ def main(ui):
             msg3_3 = str(msg3)
             ui.lmsg3.setText(msg3_3)
 
-
             time.sleep(segundos)
+            valor = float(cotacao['EUR']['bid'])
 
 
         # ALARME DE A META FOR ATINGIDA

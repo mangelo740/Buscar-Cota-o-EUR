@@ -28,11 +28,13 @@ while valor >= meta:
     print('-' * 35)
     print('#### Cotação do Euro ####')
     print('-' * 35)
+    print(f'#### Meta a ser atingida R$ {meta} ####')
     print ('Moeda: ' + cotacao['EUR']['name'])
     print ('Data: ' + cotacao['EUR']['create_date'])
     print('-' * 35)
-    print('Valor atual: R$' + cotacao['EUR']['bid'])
+    print('Valor atual: R$ ' + cotacao['EUR']['bid'])
     time.sleep(segundos)
+    valor = float(cotacao['EUR']['bid'])
 
 
 # ALARME DE A META FOR ATINGIDA

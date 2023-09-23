@@ -36,11 +36,15 @@ while valor >= meta:
     time.sleep(segundos)
     valor = float(cotacao['EUR']['bid'])
 
-
+'''
 # ALARME DE A META FOR ATINGIDA
 pygame.mixer.init()
 pygame.mixer.music.load('.\sample.mp3')
 pygame.mixer.music.play()
+'''
+
+pygame.
+
 
 print('-' * 35)
 print(f'A sua meta de cotação foi atingida {meta} a cotação atual é {valor}') 
